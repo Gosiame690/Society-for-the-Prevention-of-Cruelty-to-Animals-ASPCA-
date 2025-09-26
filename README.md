@@ -1,3 +1,4 @@
+PART 1
 Before (Current Website Structure)
 
 Homepage
@@ -105,7 +106,7 @@ Secure payment gateways
 Donor recognition section
 
 Volunteer & Get Involved Page
-
+PART 2
 Pages Included
  • index.html → Homepage with mission, featured pets, and calls-to-action
  • about.html → Organization history and mission
