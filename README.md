@@ -106,6 +106,46 @@ Donor recognition section
 
 Volunteer & Get Involved Page
 
+Pages Included
+ • index.html → Homepage with mission, featured pets, and calls-to-action
+ • about.html → Organization history and mission
+ • gallery.html → Image gallery of rescued/re-homed animals
+ • adoption.html → Adoptable pets and adoption application form
+ • donate.html → Donation options and support details
+ • volunteer.html → Volunteer opportunities and sign-up form
+ • resource.html → Educational resources, guides, FAQs, and external links
+ • contact.html → Contact form, details, and embedded Google map
+ 
+ Setup & Usage
+ • Clone or download the project folder.
+ • Open index.html in your browser to view the site.
+ • Ensure the folder structure includes: /css/style.css, /js/main.js, /image/, /documents/
+ • Optional: Host on GitHub Pages, Netlify, or other hosting provider.
+ 
+ Improvements & Refinements
+ • Navigation Bar: Cleaned up HTML, consistent navbar structure, active page highlighting.
+ • Layout & Design: Unified color palette (#007b5e green + accent yellow), consistent
+ headers/footers.
+ • Gallery Page: Fixed , responsive grid-based gallery, hover zoom effects.
+ • Forms: Unified structure, accessibility improvements, JS validation & AJAX.
+ • Resource Page: Added guides, FAQs, external links.
+ • Homepage: Hero banner, mission statement, featured pets, help section, testimonials.
+ • JavaScript: Mobile nav toggle, smooth scroll, back-to-top, gallery lightbox, form validation.
+ 
+ Changelog
+ • v1.0.0 – Initial Version: Basic HTML pages created.
+ • v1.1.0 – Layout Fixes: Corrected nav markup, consistent headers/footers.
+ • v1.2.0 – Design & Styling: Color palette, responsive grid, styled forms.
+ • v1.3.0 – Content Improvements: Expanded Homepage, Resource Page, About Page.
+ • v1.4.0 – JavaScript Enhancements: Mobile nav toggle, smooth scroll, lightbox, form handling.
+ 
+ Next Steps
+ • Add backend for form submissions.
+ • Implement secure donations with PayPal/Stripe.
+ • Expand gallery with advanced lightbox.
+ • Add multilingual support.
+ • Improve accessibility (WCAG).
+
 Volunteer sign-up forms
 
 Project/role listings
