@@ -8,120 +8,140 @@ Module: WEDE5020 — Web Development
 
 Assignment: Part 3 — Functionality, Enhancement and Optimization
 
-Project Title: Society for the Prevention of Cruelty to Animals (SPCA) Website
-1. Website Overview
+Part 3 Changes Completed:
 
-The SPCA website was developed to promote animal welfare and educate the public about adoption, volunteering, and donation opportunities.
-It consists of multiple pages: Home, About, Adoption, Volunteer, Donate, Gallery, Resources, and Contact.
+JavaScript Fixes and Enhancements:
 
-The site is built using:
+The script file reference was corrected on all pages. Previously, the website attempted to load a file named main.javascript, which did not exist. This was replaced with the correct script file (script.js).
 
-HTML5 for structure
+The navigation menu (hamburger menu) was made functional on smaller screens. This allows users to toggle the menu open and closed on mobile devices.
 
-CSS3 for styling and responsiveness
+Navigation Structure Improvements:
 
-JavaScript (main.js) for interactivity and validation
+Duplicate navigation tags and incorrect menu structure were replaced with a clean, uniform navigation bar across all pages.
 
-The design is responsive and accessible on desktop and mobile devices.
+Added a container named “nav-links” to ensure the JavaScript functionality works properly to open and close the menu on smaller screens.
 
-⚙️ 2. JavaScript Enhancements
+Dynamic Interactivity Feature (Required for Part 3):
 
-JavaScript was used to add interactivity and functionality across the site:
+A live search feature was added to the Gallery page.
 
-Form Validation:
-The contact form validates required fields, email format, and message length before submission. Invalid fields display error messages.
+Users can now type into a search bar and the displayed animals/images filter automatically without refreshing the page.
 
-Lightbox Gallery:
-The gallery allows users to click on images to view them in a modal overlay. Navigation arrows and keyboard controls are included.
+This fulfills the Part 3 requirement for a JavaScript-based interactive element.
 
-Smooth Scroll and Navigation:
-Buttons and links use smooth scrolling and highlight active menu sections.
+Additional Page Adjustments:
 
-File: /javascript/main.js
+The adoption page cards/images were adjusted to maintain consistent formatting.
 
-💬 3. Contact Form Functionality
+The enquiry page allows users to submit general communication or contact messages. Input validation ensures all required fields are filled before submission.
+Enquiry Page Changes (Before vs After)
+1. Navigation Bar Fixed
 
-Located on contact.html
+Before:
 
-Includes the following fields: Name, Email, Subject, and Message.
+The navigation links appeared stacked.
 
-JavaScript ensures that no field is empty and that the email follows a valid format.
+The hamburger menu did not function on mobile.
 
-The form’s action is linked to process-contact.php, which stores messages in the /documents/messages.txt file for demonstration purposes.
+After:
 
-✅ This satisfies the functional form requirement (client-side + server-side logic).
+The navigation bar was updated with a working hamburger menu toggle.
 
-📸 4. Gallery and Media
+Navigation links now display horizontally on desktop and collapse properly on mobile.
 
-gallery.html contains a photo gallery of animals available for adoption.
+2. Form Layout Improved
 
-Each image opens in a lightbox when clicked.
+Before:
 
-Images are stored in the /images/ folder and can easily be replaced with real animal photos.
+Form inputs appeared on one long horizontal line.
 
-Alt attributes are used for accessibility and descriptive SEO.
+No spacing between fields.
 
-✅ Meets the multimedia requirement.
+After:
 
-🎨 5. Design and Layout
+The form was reorganized into a vertical, single-column layout.
 
-Consistent header and footer on all pages.
+Proper spacing and alignment were added using CSS.
 
-Uses CSS Grid and Flexbox for responsive layouts.
+The form now looks cleaner, readable, and more professional.
 
-Color scheme: Blue and white — reflecting SPCA’s identity.
+3. Additional Input Fields and Clarity
 
-Fonts: Simple, readable sans-serif typography.
+Before:
 
-Navigation bar links all pages clearly.
+Form had limited fields and no clarity on response expectations.
 
-File: /css/style.css
+After:
 
-✅ Meets layout and accessibility requirements.
+Added “Reason for Enquiry” dropdown.
 
-🔐 6. SEO and Accessibility Considerations
+Added optional phone number field.
 
-Although robots.txt and sitemap.xml were not included, SEO has been considered through:
+Added Preferred Contact Method radio options.
 
-Descriptive <title> and <meta name="description"> tags.
+Added a message telling users SPCA will respond within 2–3 working days.
 
-Use of alt text on all images.
+4. Form Submission Feedback
 
-Proper heading hierarchy (<h1>, <h2>, <h3>).
+Before:
 
-Mobile responsiveness (<meta name="viewport">).
+Submitting the form provided no confirmation.
 
-✅ Meets minimum SEO requirements.
+After:
 
-🔁 7. Version Control and Hosting
+A success message now appears after submitting the form:
 
-The project was managed using Git and uploaded to GitHub for version control and hosting.
-Commit messages document each development stage (structure, styling, interactivity, optimization).
+"Thank you! Your enquiry has been submitted."
 
-Example commits:
+The form resets cleanly after submission.
 
-“Initial website structure created”
+5. Styling Enhancements (CSS)
 
-“Added gallery and lightbox feature”
+Before:
 
-“Implemented form validation and PHP handler”
+No layout styling applied.
 
-“Finalized Part 3 documentation”
+Form looked unformatted.
 
-8. Change Log Summary
+After:
 
-See the separate CHANGELOG.md file for detailed version notes.
-Key updates:
+Max-width added to center the form.
 
-v1.0: Basic HTML structure created
+Padding and borders applied to input fields.
 
-v1.1: CSS styling and layout added
+Submit button styled for clarity and interaction.
 
-v1.2: JavaScript interactivity and validation implemented
+Contact preference options aligned neatly.
+SEO and Accessibility Enhancements:
 
-v1.3: Gallery lightbox completed
+Meta descriptions and keywords were added to support search engine indexing.
 
-v1.4: Final optimization and documentation added
-✅ Meets the version control and hosting requirement.
+Ensured each page has one clear heading (H1 tag).
 
-🧾 8. Change Log Summary
+Added alternative text descriptions to all images for accessibility.
+
+Implemented image organization improvements so the website structure is easier to manage.
+
+Files Added:
+script.js (JavaScript functionality)
+enquiry.html (General enquiry form page)
+robots.txt (Ensures search engines can access the site)
+sitemap.xml (Helps search engines crawl the structure of the site)
+
+Key Outcomes:
+
+The site now contains functional and responsive navigation.
+
+Dynamic JavaScript improves usability and user engagement.
+
+Pages are more consistent, organized, and professional.
+
+The site fulfills the functional requirements of Part 3.
+
+References:
+Mozilla Developer Network (MDN Web Docs) – Used for reference on JavaScript, HTML, and CSS. https://developer.mozilla.org/
+
+W3Schools – Used for examples and structure guidance for menus and responsive layout. https://www.w3schools.com/
+
+Google Search Central SEO Starter Guide – Used to apply meta tags, sitemap, and robots.txt. https://developers.google.com/search/docs/beginner/seo-starter-guide.
